@@ -6,7 +6,7 @@ library(ggplot2)
 
 #1
 mtcars  %>%
-  ggplot(mapping = aes(x= disp, y= hp))+ geom_point(alpha= 0.5) + facet_wrap(~vs) + 
- ylab("Horse Power") + xlab("Displacement")
+  ggplot(mapping = aes(x= drat, y= hp))+ geom_point(alpha= 0.5) + facet_wrap(~vs) + 
+ ylab("Horse Power") + xlab("Rear axle ratio")
 + theme_minimal()
 
